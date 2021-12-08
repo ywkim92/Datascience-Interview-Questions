@@ -1,6 +1,5 @@
 # Datascience-Interview-Questions
 - Originated from [Seongyun Byeon](https://github.com/zzsza/Datascience-Interview-Questions)
-<img src="https://latex.codecogs.com/svg.latex?\Large&space;\hat{y}=\displaystyle\arg\max_y&space;P(y)\prod_{i=1}^{n}P(x_i|y)"/>
 
 ## Contents
 - [공통 질문](#공통-질문)
@@ -101,7 +100,9 @@
 - Markov Chain을 고등학생에게 설명하려면 어떤 방식이 제일 좋을까요?
 - 텍스트 더미에서 주제를 추출해야 합니다. 어떤 방식으로 접근해 나가시겠나요?
 - SVM은 왜 반대로 차원을 확장시키는 방식으로 동작할까요? 거기서 어떤 장점이 발생했나요?
-- 다른 좋은 머신 러닝 대비, 오래된 기법인 나이브 베이즈(naive bayes)의 장점을 옹호해보세요.
+- 다른 좋은 머신 러닝 대비, 오래된 기법인 나이브 베이즈(naive bayes)의 장점을 옹호해보세요.  
+  - <img src="https://latex.codecogs.com/svg.latex?\large&space;\hat{y}=\displaystyle\arg\max_y&space;P(y)\prod_{i=1}^{n}P(x_i|y)"/>  
+  - 구현이 간단하며 샘플과 변수의 수가 많더라도 빠른 학습 및 예측이 가능하다. 전제(각 변수의 독립, 특정 분포를 따름)가 타당하다면 양호한 정확도를 기대할 수 있다.  
 - Association Rule의 Support, Confidence, Lift에 대해 설명해주세요.
 - 최적화 기법중 Newton’s Method와 Gradient Descent 방법에 대해 알고 있나요?
 - 머신러닝(machine)적 접근방법과 통계(statistics)적 접근방법의 둘간에 차이에 대한 견해가 있나요?
