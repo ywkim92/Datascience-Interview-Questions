@@ -1,6 +1,7 @@
 # Datascience-Interview-Questions
 - Originated from [Seongyun Byeon](https://github.com/zzsza/Datascience-Interview-Questions)
-<img src="https://latex.codecogs.com/svg.latex?\Large&space;\hat{y}=\displaystyle\arg\max_y P(y)\prod_{i=1}^{n}P(x_i|y)"/>
+<img src="https://latex.codecogs.com/svg.latex?\Large&space;\hat{y}=\displaystyle\arg\max_y&space;P(y)\prod_{i=1}^{n}P(x_i|y)"/>
+
 ## Contents
 - [공통 질문](#공통-질문)
 - [프로젝트](#프로젝트)
