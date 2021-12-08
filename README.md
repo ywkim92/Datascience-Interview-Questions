@@ -1,5 +1,5 @@
 # Datascience-Interview-Questions
-- Originated from [Seongyun Byeon](https://github.com/zzsza)
+- Originated from [Seongyun Byeon](https://github.com/zzsza/Datascience-Interview-Questions)
 
 ## Contents
 - [공통 질문](#공통-질문)
