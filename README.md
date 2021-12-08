@@ -44,7 +44,9 @@
 - 고유값(eigen value)와 고유벡터(eigen vector)에 대해 설명해주세요. 그리고 왜 중요할까요?  
   - <img src="https://latex.codecogs.com/svg.latex?\large&space;A\mathbf{v}=\lambda\mathbf{v},&space;\mathbf{v}\neq\mathbf{0}"/>  
   - 선형 변환 전과 후의 벡터가 서로 평행하면, 그 벡터는 선형  고유벡터이다. 고유벡터를 선형 변환의 축(axes)로 생각할 수 있다.
-- 샘플링(Sampling)과 리샘플링(Resampling)에 대해 설명해주세요. 리샘플링은 무슨 장점이 있을까요?
+- 샘플링(Sampling)과 리샘플링(Resampling)에 대해 설명해주세요. 리샘플링은 무슨 장점이 있을까요?  
+  - sampling: 단순 무작위, 계통, 층화, 군집 추출 등
+  - resampling: bootstrap, cross-validation 등. 샘플의 통계량의 정밀도를 측정하거나 샘플의 임의의 부분 집합을 이용하여 모델을 검증함
 - 확률 모형과 확률 변수는 무엇일까요?
 - 누적 분포 함수와 확률 밀도 함수는 무엇일까요? 수식과 함께 표현해주세요
 - 베르누이 분포 / 이항 분포 / 카테고리 분포 / 다항 분포 / 가우시안 정규 분포 / t 분포 / 카이제곱 분포 / F 분포 / 베타 분포 / 감마 분포 / 디리클레 분포에 대해 설명해주세요. 혹시 연관된 분포가 있다면 연관 관계를 설명해주세요
