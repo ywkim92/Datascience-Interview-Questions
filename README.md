@@ -54,7 +54,8 @@
 - 공분산과 상관계수는 무엇일까요? 수식과 함께 표현해주세요
 - 신뢰 구간의 정의는 무엇인가요?
 - p-value를 고객에게는 뭐라고 설명하는게 이해하기 편할까요?
-- p-value는 요즘 시대에도 여전히 유효할까요? 언제 p-value가 실제를 호도하는 경향이 있을까요?
+- p-value는 요즘 시대에도 여전히 유효할까요? 언제 p-value가 실제를 호도하는 경향이 있을까요?  
+  - [레퍼런스](https://blog.minitab.com/en/understanding-statistics/what-can-you-say-when-your-p-value-is-greater-than-005)  
 - A/B Test 등 현상 분석 및 실험 설계 상 통계적으로 유의미함의 여부를 결정하기 위한 방법에는 어떤 것이 있을까요?
 - R square의 의미는 무엇인가요? 
 - 평균(mean)과 중앙값(median)중에 어떤 케이스에서 뭐를 써야할까요?
