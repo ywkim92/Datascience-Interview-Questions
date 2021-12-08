@@ -1,6 +1,6 @@
 # Datascience-Interview-Questions
 - Originated from [Seongyun Byeon](https://github.com/zzsza)
-- <img src="https://latex.codecogs.com/svg.latex?\Large&space;x=\frac{-b\pm\sqrt{b^2-4ac}}{2a}" title="\Large x=\frac{-b\pm\sqrt{b^2-4ac}}{2a}" />
+- <img src="https://latex.codecogs.com/svg.latex?\Large&space;x=\frac{-b\pm\sqrt{b^2-4ac}}{2a}"  />
 ## Contents
 - [공통 질문](#공통-질문)
 - [프로젝트](#프로젝트)
