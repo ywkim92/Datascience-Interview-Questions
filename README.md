@@ -1,17 +1,5 @@
 # Datascience-Interview-Questions
-- [![Hits](https://hits.seeyoufarm.com/api/count/incr/badge.svg?url=https%3A%2F%2Fgithub.com%2Fzzsza%2FDatascience-Interview-Questions)](https://hits.seeyoufarm.com)
-- Made by [Seongyun Byeon](https://github.com/zzsza)
-- Last modified date : 18.12.2
-
-## Intro
-- 데이터 사이언스 분야의 인터뷰 질문을 모아봤습니다. (데이터 분석가 / 데이터 사이언티스트 / 데이터 엔지니어)  
-	- **구직자**에겐 예상 질문을 통해 면접 합격을 할 수 있도록, **면접관**에겐 좋은 면접 질문을 할 수 있도록, 딥러닝 **공부**하는 분들에겐 용어를 알 수 있도록 도와드리기 위해 본 문서를 만들게 되었습니다. 다만 여기에 나온 모든 것들을 알 필요는 없습니다. 특정 분야에 이런 것들이 있나보다~ 정도의 키워드만 가져가도 충분히 좋을 것 같습니다!  
-	- (단, 테마가 어색하거나 질문이 이상한 것들이 존재할 수 있으니 꼭 선별해서 보시길 부탁드립니다!!!)  
-	- 정답은 따로 작성하지 않으며 질문 위주로 작성했습니다.  ( 하용호님, 남세동님의 허락을 받아 내용을 포함했습니다 )  
-- 질문의 테마를 넣기 애매할 경우엔 제가 임의로 넣었습니다. 또한 특정 분야는 제 얕은 지식으로 문제를 작성했으니, 문제가 부족하다고 느끼시면 언제든 PR 날려주세요 :)
-- Github에서 보실 분들은 [링크](https://github.com/zzsza/Datascience-Interview-Questions)를 클릭해주세요
-- Data Science 공부에 대한 전반적인 내용이 궁금하신 분은 [I-want-to-study-Data-Science](https://github.com/Team-Neighborhood/I-want-to-study-Data-Science/wiki) 문서를 보시면 좋을 것 같아요 :)
-- 개발 전반적인 면접 질문은 [Interview\_Question\_for\_Beginner](https://github.com/JaeYeopHan/Interview_Question_for_Beginner)를 추천합니다! 신입 데이터 엔지니어의 경우 해당 문서에 있는 CS 내용을 숙지하면 좋을 것 같습니다
+- Originated from [Seongyun Byeon](https://github.com/zzsza)
 
 ## Contents
 - [공통 질문](#공통-질문)
@@ -60,7 +48,8 @@
 ##### [목차로 이동](#contents)
 
 ## 통계 및 수학
-- 고유값(eigen value)와 고유벡터(eigen vector)에 대해 설명해주세요. 그리고 왜 중요할까요?
+- 고유값(eigen value)와 고유벡터(eigen vector)에 대해 설명해주세요. 그리고 왜 중요할까요?  
+  - $A \mathbf{v} = \lambda \mathbf{v}$
 - 샘플링(Sampling)과 리샘플링(Resampling)에 대해 설명해주세요. 리샘플링은 무슨 장점이 있을까요?
 - 확률 모형과 확률 변수는 무엇일까요?
 - 누적 분포 함수와 확률 밀도 함수는 무엇일까요? 수식과 함께 표현해주세요
