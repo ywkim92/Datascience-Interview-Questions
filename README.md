@@ -267,14 +267,26 @@
   - diversity
   - novelty
 - Explicit Feedback과 Implicit Feedback은 무엇일까요? Impicit Feedback을 어떻게 Explicit하게 바꿀 수 있을까요?
+  - explicit: 유저가 특정 아이템에 대한 호불호를 명시적으로 표현. 좋아요/싫어요, 평점 등
+  - implicit: 유저와 아이템 간의 상호작용. 아이템 조회, 구매 등
+  - 특정한 로직을 설정하고 그에 따라 implicit을 통해 explicit 추정
 - Matrix Factorization은 무엇인가요? 해당 알고리즘의 장점과 단점은?
+  - Utility matrix를 user latent matrix와 item latent matrix의 곱으로 표현
+  - 장점: 비교적 높은 정확도, 확장성(scalable), sparse dataset에도 적용 가능
+  - 단점: 아이템 혹은 유저의 특성을 반영할 수 없음, cold start
 - SQL으로 조회 기반 Best, 구매 기반 Best, 카테고리별 Best를 구하는 쿼리를 작성해주세요
 - 추천 시스템에서 KNN 알고리즘을 활용할 수 있을까요?
+  - profile, latent factors 등을 이용해 유저나 아이템을 벡터 공간에 임베딩할 수 있다면 벡터 간 유사도(거리) 측정 가능
+  - 이를 바탕으로 최근접 이웃을 추출
 - 유저가 10만명, 아이템이 100만개 있습니다. 이 경우 추천 시스템을 어떻게 구성하시겠습니까?
 - 딥러닝을 활용한 추천 시스템의 사례를 알려주세요
 - 두 추천엔진간의 성능 비교는 어떤 지표와 방법으로 할 수 있을까요? 검색엔진에서 쓰던 방법을 그대로 쓰면 될까요? 안될까요?
 - Collaborative Filtering에 대해 설명한다면?
+  - 한 아이템 혹은 유저와 유사한 아이템/유저를 찾아 rating을 추정
+  - 단점: cold start, sparsity, popularity bias, 최근접 이웃 추출 시 컴퓨팅 리소스 소모 큼
 - Cold Start의 경우엔 어떻게 추천해줘야 할까요?
+  - 신규 아이템: item profile 활용해 유사한 아이템 추출
+  - 신규 유저: popular item 추천, 회원가입 시 설문조사
 - 고객사들은 기존 추천서비스에 대한 의문이 있습니다. 주로 매출이 실제 오르는가 하는 것인데, 이를 검증하기 위한 방법에는 어떤 것이 있을까요? 위 관점에서 우리 서비스의 성능을 고객에게 명확하게 인지시키기 위한 방법을 생각해봅시다.
 
 ##### [목차로 이동](#contents)
