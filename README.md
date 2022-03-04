@@ -58,6 +58,8 @@
   - [레퍼런스](https://blog.minitab.com/en/understanding-statistics/what-can-you-say-when-your-p-value-is-greater-than-005)  
 - A/B Test 등 현상 분석 및 실험 설계 상 통계적으로 유의미함의 여부를 결정하기 위한 방법에는 어떤 것이 있을까요?
 - R square의 의미는 무엇인가요? 
+  - 데이터셋 종속변수(label)의 분산 가운데 모델 연산에 따라 독립변수(features)로 설명되는 분산의 비율
+  - <img src="https://latex.codecogs.com/svg.latex?\normalsize&space;R^2(y,\hat{y})=1-\frac{\sum_{i=1}^{n}(y_i-\hat{y}_i)^2}{\sum_{i=1}^{n}(y_i-\bar{y})^2}&space;"/>
 - 평균(mean)과 중앙값(median)중에 어떤 케이스에서 뭐를 써야할까요?
   - 데이터에 이상치가 있을 때, 그 이상치에 의해 평균이 왜곡될 수 있음. 이를 피하면서 한 샘플의 대푯값을 얻고자 한다면, 중앙값을 사용하는 게 바람직함.
 - 중심극한정리는 왜 유용한걸까요?
