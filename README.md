@@ -180,7 +180,8 @@
   - 나무의 개수가 많을수록 임의성이 확보되어 모델이 보다 robust하다
 - 스팸 필터에 로지스틱 리그레션을 많이 사용하는 이유는 무엇일까요?
 - OLS(ordinary least squre) regression의 공식은 무엇인가요?
-
+  - <img src="https://latex.codecogs.com/svg.latex?\large&space;\mathbf{y}=X\beta+\epsilon"/>  
+  - <img src="https://latex.codecogs.com/svg.latex?\large&space;\hat{\beta}=(X^{T}&space;X)^{-1}X^{T}\mathbf{y}"/>  
 
 ##### [목차로 이동](#contents)
 
