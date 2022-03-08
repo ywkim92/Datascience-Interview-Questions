@@ -139,6 +139,11 @@
   - 구현이 간단하며 샘플과 변수의 수가 많더라도 빠른 학습 및 예측이 가능하다. 전제(각 변수의 독립, 특정 분포를 따름)가 타당하다면 양호한 정확도를 기대할 수 있다.  
 - Association Rule의 Support, Confidence, Lift에 대해 설명해주세요.
 - 최적화 기법중 Newton’s Method와 Gradient Descent 방법에 대해 알고 있나요?
+  - Newton's method: <img src="https://latex.codecogs.com/svg.latex?\normalsize&space;x_{n+1}=x_{n}-\frac{f(x_{n})}{f'(x_{n})}"/>
+    - <img src="https://latex.codecogs.com/svg.latex?\small&space;f(x)=0"/> 의 해를 찾는 수치해석적 방법  
+  - Gradient decent: <img src="https://latex.codecogs.com/svg.latex?\normalsize&space;\theta_{n+1}=\theta_{n}-\eta\nabla_{\theta}&space;J(\theta_{n})"/>  
+    - 손실함수 <img src="https://latex.codecogs.com/svg.latex?\small&space;J(\theta)"/> 를 최소화하는 파라미터를 찾는 과정  
+    - 그래디언트 <img src="https://latex.codecogs.com/svg.latex?\small&space;\nabla&space;J(\theta)=\frac{\partial&space;J}{\partial\theta}"/> 를 이용함
 - 머신러닝(machine)적 접근방법과 통계(statistics)적 접근방법의 둘간에 차이에 대한 견해가 있나요?
 - 인공신경망(deep learning이전의 전통적인)이 가지는 일반적인 문제점은 무엇일까요?
 - 지금 나오고 있는 deep learning 계열의 혁신의 근간은 무엇이라고 생각하시나요?
