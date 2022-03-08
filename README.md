@@ -70,7 +70,7 @@
   - bayesian: 사전분포를 가정하고 새로운 관측값을 반영해 베이즈 정리로 사후분포를 구하며 모수를 추정
 - 검정력(statistical power)은 무엇일까요?
 - missing value가 있을 경우 채워야 할까요? 그 이유는 무엇인가요?
-  - 어떤 값으로든 채워야 함. 변수값이 하나라도 비어 있으면 모델이 학습 및 
+  - 어떤 값으로든 채워야 함. 변수값이 하나라도 비어 있으면 모델이 학습 및 inference할 
 - 아웃라이어의 판단하는 기준은 무엇인가요?
   - 박스 플롯(사분위수): max, min을 벗어나면 아웃라이어로 판단
   - 시각화, 마할라노비스 거리
@@ -131,6 +131,9 @@
 - Markov Chain을 고등학생에게 설명하려면 어떤 방식이 제일 좋을까요?
 - 텍스트 더미에서 주제를 추출해야 합니다. 어떤 방식으로 접근해 나가시겠나요?
 - SVM은 왜 반대로 차원을 확장시키는 방식으로 동작할까요? 거기서 어떤 장점이 발생했나요?
+  - rbf, linear, sigmoid 등 kernel을 통해 차원을 확장
+  - (특히 분류 문제에서) 확장된 공간에 mapping된 data points를 선형으로 구분하는 hyperplane을 찾을 수 있음
+  - 예시: 서로 다른 두 클래스에 속하는 두 동심원. [ref](https://scikit-learn.org/stable/auto_examples/decomposition/plot_kernel_pca.html#sphx-glr-auto-examples-decomposition-plot-kernel-pca-py)
 - 다른 좋은 머신 러닝 대비, 오래된 기법인 나이브 베이즈(naive bayes)의 장점을 옹호해보세요.  
   - <img src="https://latex.codecogs.com/svg.latex?\normalsize&space;\hat{y}=\displaystyle\arg\max_y&space;P(y)\prod_{i=1}^{n}P(x_i|y)"/>  
   - 구현이 간단하며 샘플과 변수의 수가 많더라도 빠른 학습 및 예측이 가능하다. 전제(각 변수의 독립, 특정 분포를 따름)가 타당하다면 양호한 정확도를 기대할 수 있다.  
