@@ -104,6 +104,7 @@
 - 콜센터 통화 지속 시간에 대한 데이터가 존재합니다. 이 데이터를 코드화하고 분석하는 방법에 대한 계획을 세워주세요. 이 기간의 분포가 어떻게 보일지에 대한 시나리오를 설명해주세요
 - 출장을 위해 비행기를 타려고 합니다. 당신은 우산을 가져가야 하는지 알고 싶어 출장지에 사는 친구 3명에게 무작위로 전화를 하고 비가 오는 경우를 독립적으로 질문해주세요. 각 친구는 2/3로 진실을 말하고 1/3으로 거짓을 말합니다. 3명의 친구가 모두 "그렇습니다. 비가 내리고 있습니다"라고 말했습니다. 실제로 비가 내릴 확률은 얼마입니까?
 - 필요한 표본의 크기를 어떻게 계산합니까?
+  - [reference](https://en.wikipedia.org/wiki/Sample_size_determination#Estimation_of_a_proportion)
   - Z: z-score, p: population proportion, epsilone: margin of error
   - <img src="https://latex.codecogs.com/svg.latex?\normalsize&space;n=\frac{Z^{2}&space;p(1-p)}{\epsilon^2}&space;"/>
 - Bias를 통제하는 방법은 무엇입니까?
