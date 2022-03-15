@@ -146,8 +146,14 @@
     - 그래디언트 <img src="https://latex.codecogs.com/svg.latex?\small&space;\nabla&space;J(\theta)=\frac{\partial&space;J}{\partial\theta}"/> 를 이용함
 - 머신러닝(machine)적 접근방법과 통계(statistics)적 접근방법의 둘간에 차이에 대한 견해가 있나요?
 - 인공신경망(deep learning이전의 전통적인)이 가지는 일반적인 문제점은 무엇일까요?
+  - XOR problem: 하나의 perceptron만으로는 해결할 수 없음
 - 지금 나오고 있는 deep learning 계열의 혁신의 근간은 무엇이라고 생각하시나요?
+  - 여러 layers를 쌓으면서도 적절한 activation function을 활용하여 기울기 소실 없이 유의미한 학습 가능
+  - 오차 역전파를 통해 gradient를 계산하고 이를 사용해 가중치 업데이트. 휴리스틱 방법론 등 사람의 개입 여지 축소
+  - 빅데이터를 학습한 사전 학습 모델을 나의 과제에 활용할 수 있음
 - ROC 커브에 대해 설명해주실 수 있으신가요?
+  - false positive rate를 x축으로 true positive rate(recall=sensitivity)를 y축으로 하는 그래프
+  - AUC: ROC 커브와 y=0, x=1로 둘러쌓인 면적의 넓이
 - 여러분이 서버를 100대 가지고 있습니다. 이때 인공신경망보다 Random Forest를 써야하는 이유는 뭘까요?
 - K-means의 대표적 의미론적 단점은 무엇인가요? (계산량 많다는것 말고)
   - 이상치에 민감함
