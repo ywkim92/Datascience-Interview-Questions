@@ -216,8 +216,10 @@
 - Gradient Descent에 대해서 쉽게 설명한다면?
 	- 왜 꼭 Gradient를 써야 할까? 그 그래프에서 가로축과 세로축 각각은 무엇인가? 실제 상황에서는 그 그래프가 어떻게 그려질까?
 	- GD 중에 때때로 Loss가 증가하는 이유는?
+	 - 최적화 기법에 따라 gradient, learning rate가 달라짐. 경우에 따라 loss가 증가할 수도 있음
 	- 중학생이 이해할 수 있게 더 쉽게 설명 한다면?
 	- Back Propagation에 대해서 쉽게 설명 한다면?
+	  - 손실 함수의 그래디언트를 계산하여 가중치를 업데이트하는 방법
 - Local Minima 문제에도 불구하고 딥러닝이 잘 되는 이유는?
 	- GD가 Local Minima 문제를 피하는 방법은?
 	- 찾은 해가 Global Minimum인지 아닌지 알 수 있는 방법은?
