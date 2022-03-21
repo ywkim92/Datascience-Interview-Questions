@@ -137,7 +137,7 @@
 - SVM은 왜 반대로 차원을 확장시키는 방식으로 동작할까요? 거기서 어떤 장점이 발생했나요?
   - rbf, linear, sigmoid 등 kernel을 통해 차원을 확장
   - (특히 분류 문제에서) 확장된 공간에 mapping된 data points를 선형으로 구분하는 hyperplane을 찾을 수 있음
-  - 예시: 서로 다른 두 클래스에 속하는 두 동심원. [ref](https://scikit-learn.org/stable/auto_examples/decomposition/plot_kernel_pca.html#sphx-glr-auto-examples-decomposition-plot-kernel-pca-py)
+  - 예시: 서로 다른 두 클래스에 속하는 두 동심원. [**[ref]**](https://scikit-learn.org/stable/auto_examples/decomposition/plot_kernel_pca.html#sphx-glr-auto-examples-decomposition-plot-kernel-pca-py)
 - 다른 좋은 머신 러닝 대비, 오래된 기법인 나이브 베이즈(naive bayes)의 장점을 옹호해보세요.  
   - <img src="https://latex.codecogs.com/svg.latex?\normalsize&space;\hat{y}=\displaystyle\arg\max_y&space;P(y)\prod_{i=1}^{n}P(x_i|y)"/>  
   - 구현이 간단하며 샘플과 변수의 수가 많더라도 빠른 학습 및 예측이 가능하다. 전제(각 변수의 독립, 특정 분포를 따름)가 타당하다면 양호한 정확도를 기대할 수 있다.  
@@ -223,8 +223,12 @@
 	- 중학생이 이해할 수 있게 더 쉽게 설명 한다면?
 	- Back Propagation에 대해서 쉽게 설명 한다면?
 	  - 손실 함수의 그래디언트를 계산하여 가중치를 업데이트하는 방법
-- Local Minima 문제에도 불구하고 딥러닝이 잘 되는 이유는?
-	- GD가 Local Minima 문제를 피하는 방법은?
+- Local Minima 문제에도 불구하고 딥러닝이 잘 되는 이유는? [**[ref]**](https://blog.paperspace.com/intro-to-optimization-in-deep-learning-gradient-descent/)
+        - 이유
+          - loss에서 차이를 보이더라도 metric은 유사할 수 있음
+          - trainset과 test 혹은 inference 데이터의 양상은 다름
+          - 파라미터가 많아질수록 손실함수는 고차원이 되는데 이때는 optimal local minima가 다수 존재할 수 있음 
+	- GD가 Local Minima 문제를 피하는 방법은? 
 	  - stochastic GD: 학습 데이터를 여러 개의 배치(batch)로 나누어(무작위 비복원추출) 모델 학습 및 가중치 업데이트 진행. single batch GD에 비해 매 batch마다 조금씩 다른 방향(gradient)로 
 	  - 학습률(learning rate) 조정
 	- 찾은 해가 Global Minimum인지 아닌지 알 수 있는 방법은?
