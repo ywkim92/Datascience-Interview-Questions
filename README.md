@@ -192,6 +192,9 @@
 - Cost Function과 Activation Function은 무엇인가요?
 - Tensorflow, Keras, PyTorch, Caffe, Mxnet 중 선호하는 프레임워크와 그 이유는 무엇인가요?
 - Data Normalization은 무엇이고 왜 필요한가요?
+  - 각 feature의 평균, 표준편차나 최댓값, 최솟값 등 scale을 통일하는 처리 기법
+  - 이점: 학습 시간 단축 및 모델 성능 향상
+  - 데이터 정규화를 하지 않으면 feature에 따라 가중치 변동 폭이 달라(손실함수에서 경사가 가장 가파른 방향이 일정치 않음) optimization 시 zigzagging이 심해짐
 - 알고있는 Activation Function에 대해 알려주세요. (Sigmoid, ReLU, LeakyReLU, Tanh 등)
 - 오버피팅일 경우 어떻게 대처해야 할까요?
   - 데이터 양 증가, 모델 복잡도(layers 개수, parameters 개수 등) 감소, weight decay, dropout
@@ -222,6 +225,8 @@
 	  - 손실 함수의 그래디언트를 계산하여 가중치를 업데이트하는 방법
 - Local Minima 문제에도 불구하고 딥러닝이 잘 되는 이유는?
 	- GD가 Local Minima 문제를 피하는 방법은?
+	  - stochastic GD: 학습 데이터를 여러 개의 배치(batch)로 나누어(무작위 비복원추출) 모델 학습 및 가중치 업데이트 진행. single batch GD에 비해 매 batch마다 조금씩 다른 방향(gradient)로 
+	  - 학습률(learning rate) 조정
 	- 찾은 해가 Global Minimum인지 아닌지 알 수 있는 방법은?
 - Training 세트와 Test 세트를 분리하는 이유는?
 	- Validation 세트가 따로 있는 이유는?
