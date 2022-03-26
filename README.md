@@ -187,9 +187,17 @@
 ## 딥러닝
 ## 딥러닝 일반
 - 딥러닝은 무엇인가요? 딥러닝과 머신러닝의 차이는?
+  - 딥러닝: 인공신경망을 깊게 쌓아 학습하는, 머신러닝 기법 중 하나
+  - 차이
+    - 전통 머신러닝 모델의 성능을 개선하기 위해서는 사용자 즉 사람의 간섭이 불가피. 그러나 딥러닝은 환경과 앞선 학습의 오차를 기반으로 (스스로) 학습 및 업데이트 가능
+    - 출력값의 종류: 머신러닝의 출력값 즉 예측값은 카테고리나 숫자. 그러나 딥러닝은 자연어, 이미지, 음성, 비디오 등을 출력(inference)할 수 있음
 - 왜 갑자기 딥러닝이 부흥했을까요?
+  - XOR 문제, gradient vanishing 등 문제가 있었지만 그에 대한 솔루션이 제시되어 신경망을 깊이 쌓아도 정상적으로 학습할 수 있게 됨
+  - 신경망을 깊이 쌓을수록 데이터의 다양한 특성을 학습할 수 있으며 분류 등 성능 향상을 기대할 수 있었음
 - 마지막으로 읽은 논문은 무엇인가요? 설명해주세요
 - Cost Function과 Activation Function은 무엇인가요?
+  - Cost Function: 모델 예측의 오차 정도를 측정하는 함수, 손실 함수를 최소화하는 방향으로 모델 학습
+  - Activation Function: 뉴런(노드)에서 출력값을 결정하는 함수
 - Tensorflow, Keras, PyTorch, Caffe, Mxnet 중 선호하는 프레임워크와 그 이유는 무엇인가요?
 - Data Normalization은 무엇이고 왜 필요한가요?
   - 각 feature의 평균, 표준편차나 최댓값, 최솟값 등 scale을 통일하는 처리 기법
@@ -200,8 +208,14 @@
   - 데이터 양 증가, 모델 복잡도(layers 개수, parameters 개수 등) 감소, weight decay, dropout
 - 하이퍼 파라미터는 무엇인가요?
   - 모델 내부 연산에 의해 산출되는 값이 아닌, 사용자가 직접 입력해주어야 하는 값
-  - CNN의 kernel size, dense layer의 node 개수 등
+  - CNN의 filter 개수, kernel size, stride / dense layer의 node 개수 등
 - Weight Initialization 방법에 대해 말해주세요. 그리고 무엇을 많이 사용하나요?
+  - [implementation](https://github.com/ywkim92/Paper-implementation/blob/main/neural_network/Initializer.ipynb)
+  - 잘못된 가중치 초기화는 신경망의 표현력을 제한할 수 있음
+  - Xavier(혹은 Glorot): 활성화 함수가 Sigmoid나 tanh일 때 사용  
+    - truncated normal distribution centered on 0 with stddev = sqrt(2 / (fan_in+fan_out))
+  - He: 활성화 함수가 ReLU일 때 사용  
+    - truncated normal distribution centered on 0 with stddev = sqrt(2 / fan_in)
 - 볼츠만 머신은 무엇인가요?
 - 요즘 Sigmoid 보다 ReLU를 많이 쓰는데 그 이유는?
 	- Non-Linearity라는 말의 의미와 그 필요성은?
