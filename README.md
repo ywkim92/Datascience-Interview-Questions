@@ -226,6 +226,8 @@
 	  - 심층신경망에서는 은닉층을 다수 쌓는 게 관건. 그러나 활성화 함수가 선형함수이면 은닉층을 쌓아도 결국 은닉층이 하나인 모델과 매한가지  
 	  - 따라서 활성화 함수는 비선형 함수여야 함
 	- ReLU로 어떻게 곡선 함수를 근사하나?
+	  - ReLU는 선형 함수와 비선형 함수가 결합한 형태
+	  - 여러 은닉층에 걸쳐 ReLU가 사용되면, 각 선형 함수가 부분적으로 결합되어 비선형 함수를 근사하게 됨
 	- ReLU의 문제점은?
 	  - dying ReLu: 입력이 음수이면 함숫값이 0이 됨
 	- Bias는 왜 있는걸까?
@@ -237,15 +239,16 @@
 	- 중학생이 이해할 수 있게 더 쉽게 설명 한다면?
 	- Back Propagation에 대해서 쉽게 설명 한다면?
 	  - 손실 함수의 그래디언트를 계산하여 가중치를 업데이트하는 방법
-- Local Minima 문제에도 불구하고 딥러닝이 잘 되는 이유는? [**[ref]**](https://blog.paperspace.com/intro-to-optimization-in-deep-learning-gradient-descent/)
-        - 이유
-          - loss에서 차이를 보이더라도 metric은 유사할 수 있음
-          - trainset과 test 혹은 inference 데이터의 양상은 다름
-          - 파라미터가 많아질수록 손실함수는 고차원이 되는데 이때는 optimal local minima가 다수 존재할 수 있음 
-	- GD가 Local Minima 문제를 피하는 방법은? 
+- Local Minima 문제에도 불구하고 딥러닝이 잘 되는 이유는?   
+  - [**[ref]**](https://blog.paperspace.com/intro-to-optimization-in-deep-learning-gradient-descent/)  
+  - 이유
+    - loss에서 차이를 보이더라도 metric은 유사할 수 있음
+    - trainset과 test 혹은 inference 데이터의 양상은 다름
+    - 파라미터가 많아질수록 손실함수는 고차원이 되는데 이때는 optimal local minima가 다수 존재할 수 있음 
+  - GD가 Local Minima 문제를 피하는 방법은? 
 	  - stochastic GD: 학습 데이터를 여러 개의 배치(batch)로 나누어(무작위 비복원추출) 모델 학습 및 가중치 업데이트 진행. single batch GD에 비해 매 batch마다 조금씩 다른 방향(gradient)로 
 	  - 학습률(learning rate) 조정
-	- 찾은 해가 Global Minimum인지 아닌지 알 수 있는 방법은?
+  - 찾은 해가 Global Minimum인지 아닌지 알 수 있는 방법은?
 - Training 세트와 Test 세트를 분리하는 이유는?
 	- Validation 세트가 따로 있는 이유는?
 	- Test 세트가 오염되었다는 말의 뜻은?
