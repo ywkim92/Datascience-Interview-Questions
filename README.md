@@ -1,5 +1,5 @@
 # Datascience-Interview-Questions
-- Originated from [Seongyun Byeon](https://github.com/zzsza/Datascience-Interview-Questions)
+- Source of questions: [Seongyun Byeon](https://github.com/zzsza/Datascience-Interview-Questions)
 
 ## Contents
 - [통계 및 수학](#통계-및-수학)
@@ -71,7 +71,7 @@
   - 이를 학습에 적용하여 한정된 샘플로 다수의 분류기를 생성하는 기법이 bagging
 - 모수(population)가 매우 적은 (수십개 이하) 케이스의 경우 어떤 방식으로 예측 모델을 수립할 수 있을까요?
   - overfitting 방지: 단순한 모델 채택 및 보수적인 적용, regularization 사용
-  - Outliers 관리
+  - outliers 관리
   - oversampling
   - voting: 여러 단일 모델의 결과를 voting
 - 베이지안과 프리퀀티스트간의 입장차이를 설명해주실 수 있나요?
@@ -234,8 +234,8 @@
 - 요즘 Sigmoid 보다 ReLU를 많이 쓰는데 그 이유는?
 	- Non-Linearity라는 말의 의미와 그 필요성은?
 	  - linear map이 아닌 경우
-	    - <img src="https://latex.codecogs.com/svg.latex?\normal&space;f(x+y)=f(x)+f(y)"/>  
-	    - <img src="https://latex.codecogs.com/svg.latex?\normal&space;f(\alpha&space;x)=\alpha&space;f(x)"/>
+	    - <img src="https://latex.codecogs.com/svg.latex?\small&space;f(x+y)=f(x)+f(y)"/>  
+	    - <img src="https://latex.codecogs.com/svg.latex?\small&space;f(\alpha&space;x)=\alpha&space;f(x)"/>
 	  - 선형이 아닌 관계를 표현하기 위해 필요함
 	  - 심층신경망에서는 은닉층을 다수 쌓는 게 관건. 그러나 활성화 함수가 선형함수이면 은닉층을 쌓아도 결국 은닉층이 하나인 모델과 매한가지  
 	  - 따라서 활성화 함수는 비선형 함수여야 함
@@ -313,10 +313,24 @@
   - 텍스트 전처리: tokenizing, encoding, stop words 제거 등
   - 학습 및 모델링 검증
 - TF-IDF 점수는 무엇이며 어떤 경우 유용한가요?
+  - term frequency - inverse document frequency
+  - <img src="https://latex.codecogs.com/svg.latex?\normal\textstyle&space;\mathrm{tf}(t,d)=\frac{f_{t,d}}{\sum_{t'\in&space;d}f_{t',d}}"/>
+  - <img src="https://latex.codecogs.com/svg.latex?\normal\textstyle&space;\mathrm{idf}(t,D)=\log{\frac{|D|}{|\left\{d\in&space;D:\;t\in&space;d\right\}|}"/>
+  - <img src="https://latex.codecogs.com/svg.latex?\normal\textstyle&space;\mathrm{tfidf}(t,d,D)=\mathrm{tf}(t,d)\cdot\mathrm{idf}(t,D)"/>
+  - 문서별 특성을 추출하거나 문서간 유사도를 계산하는 데 유용함. DTM 산출 시 각 단어의 중요도를 반영할 수 있음
 - 한국어에서 많이 사용되는 사전은 무엇인가요?
 - Regular grammar는 무엇인가요? regular expression과 무슨 차이가 있나요?
 - RNN에 대해 설명해주세요
-- LSTM은 왜 유용한가요?
+  - Recurrent Neural Network
+  - 현시점의 결과를 예측하는 데 현시점의 입력값과 이전 시점의 은닉 상태를 함께 고려하는 모델
+  - <img src="https://latex.codecogs.com/svg.latex?\normal\textstyle&space;h_t=tanh{W_x&space;x_t+W_h&space;h_{t-1}+b}"/>
+  - Problem of long-term dependencies: 시점이 길어지면 초기 시점의 정보가 손실되는 문제 발생
+  - 현시점을 예측하는 데 중요한 부분과 현시점 사이 거리가 길어지면 성능 하락
+- LSTM은 왜 유용한가요?  
+  - Long-Short Term Memory network
+  - long-term dependencies를 학습하는 데 유효함
+  - memory cell, input gate, forget gate, output gate 
+  - [implementation](https://github.com/ywkim92/Paper-implementation/blob/main/neural_network/LSTM.ipynb)  
 - Translate 과정 Flow에 대해 설명해주세요
 - n-gram은 무엇일까요?
 - PageRank 알고리즘은 어떻게 작동하나요?
