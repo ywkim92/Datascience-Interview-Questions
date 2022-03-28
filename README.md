@@ -23,6 +23,12 @@
   - resampling: bootstrap, cross-validation 등. 샘플의 통계량의 정밀도를 측정하거나 샘플의 임의의 부분 집합을 이용하여 모델을 검증함
 - 확률 모형과 확률 변수는 무엇일까요?
 - 누적 분포 함수와 확률 밀도 함수는 무엇일까요? 수식과 함께 표현해주세요
+  - 확률 밀도 함수: 연속확률분포에서 확률변수가 특정값일 때의 우도(likelihood)
+    - <img src="https://latex.codecogs.com/svg.latex?\small\displaystyle&space;\mathrm{Pr}(a\leq&space;X\leq&space;b)=\int_{a}^{b}f_{X}(x)dx"/>  
+    - non-negative function
+  - 누적 분포 함수
+    - <img src="https://latex.codecogs.com/svg.latex?\small&space;F_{X}(x)=\mathrm{Pr}(X\leq&space;x)"/>  
+    - <img src="https://latex.codecogs.com/svg.latex?\small&space;F_{X}(x)=\int_{-\infty}^{x}f_{X}(t)dt"/>  
 - 베르누이 분포 / 이항 분포 / 카테고리 분포 / 다항 분포 / 가우시안 정규 분포 / t 분포 / 카이제곱 분포 / F 분포 / 베타 분포 / 감마 분포 / 디리클레 분포에 대해 설명해주세요. 혹시 연관된 분포가 있다면 연관 관계를 설명해주세요
 - 조건부 확률은 무엇일까요?
   - <img src="https://latex.codecogs.com/svg.latex?\small&space;P(A|B)=\frac{P(A\cap&space;B)}{P(B)}"/>
@@ -63,7 +69,11 @@
   - 복원 추출을 매우 많이 시행하였을 때 어떤 샘플이 한 번도 추출되지 않을 확률은 약 36.79%로 수렴함
   - 따라서 어떤 표본(표본집단)을 두 그룹으로 나눌 수 있음. 더불어 매 시행마다 그룹의 구성이 달라짐
   - 이를 학습에 적용하여 한정된 샘플로 다수의 분류기를 생성하는 기법이 bagging
-- 모수가 매우 적은 (수십개 이하) 케이스의 경우 어떤 방식으로 예측 모델을 수립할 수 있을까요?
+- 모수(population)가 매우 적은 (수십개 이하) 케이스의 경우 어떤 방식으로 예측 모델을 수립할 수 있을까요?
+  - overfitting 방지: 단순한 모델 채택 및 보수적인 적용, regularization 사용
+  - Outliers 관리
+  - oversampling
+  - voting: 여러 단일 모델의 결과를 voting
 - 베이지안과 프리퀀티스트간의 입장차이를 설명해주실 수 있나요?
   - [레퍼런스](https://freshrimpsushi.github.io/posts/bayesian-paradigm/)
   - frequentist: 표본이 모집단과 동질할 것이라는 가정. 따라서 (확률화를 통해 추출된) 표본의 크기가 클수록 모집단을 잘 표현함. 새로운 관측값이 표본을 통해 추정한 분포에 얼마나 잘 부합하는지 확인
