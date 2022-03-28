@@ -79,7 +79,7 @@
   - frequentist: 표본이 모집단과 동질할 것이라는 가정. 따라서 (확률화를 통해 추출된) 표본의 크기가 클수록 모집단을 잘 표현함. 새로운 관측값이 표본을 통해 추정한 분포에 얼마나 잘 부합하는지 확인
   - bayesian: 사전분포를 가정하고 새로운 관측값을 반영해 베이즈 정리로 사후분포를 구하며 모수를 추정
 - 검정력(statistical power)은 무엇일까요?
- - 귀무가설이 거짓일 때 대립가설을 채택할 확률
+  - 귀무가설이 거짓일 때 대립가설을 채택할 확률
 - missing value가 있을 경우 채워야 할까요? 그 이유는 무엇인가요?
   - 어떤 값으로든 채워야 함. 변수값이 하나라도 비어 있으면 모델이 학습 및 inference할 
 - 아웃라이어의 판단하는 기준은 무엇인가요?
@@ -200,7 +200,7 @@
   - 딥러닝: 인공신경망을 깊게 쌓아 학습하는, 머신러닝 기법 중 하나
   - 차이
     - 전통 머신러닝 모델의 성능을 개선하기 위해서는 사용자 즉 사람의 간섭이 불가피. 그러나 딥러닝은 환경과 앞선 학습의 오차를 기반으로 (스스로) 학습 및 업데이트 가능
-    - 출력값의 종류: 머신러닝의 출력값 즉 예측값은 카테고리나 숫자. 그러나 딥러닝은 자연어, 이미지, 음성, 비디오 등을 출력(inference)할 수 있음
+    - 출력값 형태의 종류: 머신러닝의 출력값 즉 예측값은 카테고리나 숫자. 그러나 딥러닝은 자연어, 이미지, 음성, 비디오 등을 출력(inference)할 수 있음
 - 왜 갑자기 딥러닝이 부흥했을까요?
   - XOR 문제, gradient vanishing 등 문제가 있었지만 그에 대한 솔루션이 제시되어 신경망을 깊이 쌓아도 정상적으로 학습할 수 있게 됨
   - 신경망을 깊이 쌓을수록 데이터의 다양한 특성을 학습할 수 있으며 분류 등 성능 향상을 기대할 수 있었음
@@ -214,6 +214,10 @@
   - 이점: 학습 시간 단축 및 모델 성능 향상
   - 데이터 정규화를 하지 않으면 feature에 따라 가중치 변동 폭이 달라(손실함수에서 경사가 가장 가파른 방향이 일정치 않음) optimization 시 zigzagging이 심해짐
 - 알고있는 Activation Function에 대해 알려주세요. (Sigmoid, ReLU, LeakyReLU, Tanh 등)
+  - sigmoid: <img src="https://latex.codecogs.com/svg.latex?\small\textstyle&space;\sigma(x)=\frac{1}{1+e^{-x}}"/>
+  - tanh: <img src="https://latex.codecogs.com/svg.latex?\small\textstyle&space;\tanh(x)=\frac{e^x-e^{-x}}{e^x+e^{-x}}"/>
+  - ReLU: <img src="https://latex.codecogs.com/svg.latex?\small\textstyle&space;f(x)=\mathrm{max}(0,x)"/>
+  - Leaky ReLU: <img src="https://latex.codecogs.com/svg.latex?\small\textstyle&space;f(x)=\begin{cases}x,&\text{if}\;\;x\geq0\\0.01x,&\text{if}\;\;x<0\end{cases}"/>
 - 오버피팅일 경우 어떻게 대처해야 할까요?
   - 데이터 양 증가, 모델 복잡도(layers 개수, parameters 개수 등) 감소, weight decay, dropout
 - 하이퍼 파라미터는 무엇인가요?
@@ -259,6 +263,8 @@
 	  - stochastic GD: 학습 데이터를 여러 개의 배치(batch)로 나누어(무작위 비복원추출) 모델 학습 및 가중치 업데이트 진행. single batch GD에 비해 매 batch마다 조금씩 다른 방향(gradient)로 
 	  - 학습률(learning rate) 조정
   - 찾은 해가 Global Minimum인지 아닌지 알 수 있는 방법은?
+    - 현실적으로 이러한 방법은 없음
+    - 학습 데이터에서 global minimum일지라도 평가 데이터에서는 아닐 수 있음
 - Training 세트와 Test 세트를 분리하는 이유는?
 	- Validation 세트가 따로 있는 이유는?
 	- Test 세트가 오염되었다는 말의 뜻은?
@@ -285,14 +291,17 @@
 	- GPU를 두개 다 쓰고 싶다. 방법은?
 	- 학습시 필요한 GPU 메모리는 어떻게 계산하는가?
 - TF, Keras, PyTorch 등을 사용할 때 디버깅 노하우는?
-- 뉴럴넷의 가장 큰 단점은 무엇인가? 이를 위해 나온 One-Shot Learning은 무엇인가? 
+  - input과 output array의 dimensionality를 살핀다
+- 뉴럴넷(neural network)의 가장 큰 단점은 무엇인가? 이를 위해 나온 One-Shot Learning은 무엇인가? 
 
 ##### [목차로 이동](#contents)
 
 ## 자연어 처리
 - One Hot 인코딩에 대해 설명해주세요
 - POS 태깅은 무엇인가요? 가장 간단하게 POS tagger를 만드는 방법은 무엇일까요?
+  - part-of-speech 태깅
 - 문장에서 "Apple"이란 단어가 과일인지 회사인지 식별하는 모델을 어떻게 훈련시킬 수 있을까요?
+  - 개체명 인식 모델을 구축
 - 뉴스 기사에 인용된 텍스트의 모든 항목을 어떻게 찾을까요?
 - 음성 인식 시스템에서 생성된 텍스트를 자동으로 수정하는 시스템을 어떻게 구축할까요?
 - 잠재론적, 의미론적 색인은 무엇이고 어떻게 적용할 수 있을까요?
@@ -300,6 +309,9 @@
 - 뉴스 기사를 주제별로 자동 분류하는 시스템을 어떻게 구축할까요?
 - Stop Words는 무엇일까요? 이것을 왜 제거해야 하나요?
 - 영화 리뷰가 긍정적인지 부정적인지 예측하기 위해 모델을 어떻게 설계하시겠나요?
+  - 긍정 혹은 부정으로 labeling된 자연어 문장 데이터셋 준비
+  - 텍스트 전처리: tokenizing, encoding, stop words 제거 등
+  - 학습 및 모델링 검증
 - TF-IDF 점수는 무엇이며 어떤 경우 유용한가요?
 - 한국어에서 많이 사용되는 사전은 무엇인가요?
 - Regular grammar는 무엇인가요? regular expression과 무슨 차이가 있나요?
