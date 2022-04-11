@@ -130,7 +130,7 @@
   - 보다 엄밀한 검증 가능. 하이퍼 파라미터 튜닝 등에 사용
 - 회귀 / 분류시 알맞은 metric은 무엇일까요?
 - 알고 있는 metric에 대해 설명해주세요(ex. RMSE, MAE, recall, precision ...)
-- 정규화를 왜 해야할까요? 정규화의 방법은 무엇이 있나요?
+- 정규화(regularization)를 왜 해야할까요? 정규화의 방법은 무엇이 있나요?
   - 오버피팅 방지
   - 데이터셋 증가, 모델 복잡도 감소, 가중치 규제, 드롭아웃 
 - Local Minima와 Global Minima에 대해 설명해주세요.
@@ -174,6 +174,9 @@
   - 군집의 개수를 미리 설정해야 함
   - non-convex shape 데이터에 적용하기 어려움
 - L1, L2 정규화에 대해 설명해주세요
+  - 특정 가중치가 업데이트를 거듭하며 0에 가까워진다. 따라서 신경망이 단순해 짐
+  - L1: <img src="https://latex.codecogs.com/svg.latex?\small&space;L(x,y)=\sum_{i=0}^{n}(y_{i}-\sum_{j=0}^{m}x_{ij}W_{j})+\lambda\sum_{j=0}^{m}|W_j|"/>
+  - L2: <img src="https://latex.codecogs.com/svg.latex?\small&space;L(x,y)=\sum_{i=0}^{n}(y_{i}-\sum_{j=0}^{m}x_{ij}W_{j})+\lambda\sum_{j=0}^{m}W_{j}^{2}"/>
 - XGBoost을 아시나요? 왜 이 모델이 캐글에서 유명할까요?
 - 앙상블 방법엔 어떤 것들이 있나요?
   - bagging: bootstrap를 사용해 하나의 원 데이터에서 다수의 데이터셋을 만들고 기본 분류기가 서로 다른 데이터셋을 학습하게 함. 각 분류기의 예측 결과를 합산
@@ -271,11 +274,18 @@
 	- Regularization이란 무엇인가?
 - Batch Normalization의 효과는?
 	- Dropout의 효과는?
+	  - 일부 노드를 무작위로 비활성화함으로써 노드 사이의 의존성을 완화함
 	- BN 적용해서 학습 이후 실제 사용시에 주의할 점은? 코드로는?
+	  - 은닉층 뒤에 사용
+	  - 앞층 출력의 평균과 분산이 항상 같음. 분포의 변화 즉 covariate shift가 없음. 앞층 출력의 영향을 덜 받음. 
+	  - 독립적, 빠르고 안정적인 학습
 	- GAN에서 Generator 쪽에도 BN을 적용해도 될까?
 - SGD, RMSprop, Adam에 대해서 아는대로 설명한다면?
 	- SGD에서 Stochastic의 의미는?
+	  - 미니배치로 묶이는 데이터가 확률적 즉 무작위로 정해진다
 	- 미니배치를 작게 할때의 장단점은?
+	  - 장점: 가중치를 자주 수정할 수 있으므로 global minimum에 접근하는 데 유리
+	  - 단점: 행렬 연산의 이점을 살리기 어렵다, 가중치 업데이트 시 진동이 심하다
 	- 모멘텀의 수식을 적어 본다면?
 - 간단한 MNIST 분류기를 MLP+CPU 버전으로 numpy로 만든다면 몇줄일까?
 	- 어느 정도 돌아가는 녀석을 작성하기까지 몇시간 정도 걸릴까?
