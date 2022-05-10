@@ -317,7 +317,10 @@
   - 그 이후에 나온 더 좋은 알고리즘은 무엇인가요?
 - Average Pooling과 Max Pooling의 차이점은?
 - Deep한 네트워크가 좋은 것일까요? 언제까지 좋을까요?
-- Residual Network는 왜 잘될까요? Ensemble과 관련되어 있을까요?
+- Residual Network는 왜 잘될까요? Ensemble과 관련되어 있을까요?  
+  - [reference](https://arxiv.org/abs/1605.06431)  
+  - ResNet에서 building blocks를 쌓는다는 것은 입력과 출력을 연결하는 O(2^n)개의 implicit paths를 설정함과 같음  
+  - 이러한 paths들은 서로 강하게 의존하지 않고 결국 ensemble과 유사하게 행동함  
 - CAM(Class Activation Map)은 무엇인가요?
 - Localization은 무엇일까요?
 - 자율주행 자동차의 원리는 무엇일까요?
