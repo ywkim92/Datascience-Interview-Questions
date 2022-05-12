@@ -313,15 +313,30 @@
 - Fatser R-CNN의 장점과 단점은 무엇인가요?
 - dlib은 무엇인가요?
 - YOLO의 장점과 단점은 무엇인가요?
+  - one stage detector의 일종  
+  - region proposal 단계를 건너뛰고 CNN 층에서 위치와 클래스를 모두 예측함  
+  - 장점: 빠른 처리 속도  
+    - 이미지를 여러 개의 격자로 나누고 각 격자에 대해 클래스를 분류  
+    - 위 과정을 통해 여러 경계박스 후보 생성  
+    - NMS로 최종 경계박스 추출    
+  - 단점: 성능 하락  
 - 제일 좋아하는 Object Detection 알고리즘에 대해 설명하고 그 알고리즘의 장단점에 대해 알려주세요  
   - 그 이후에 나온 더 좋은 알고리즘은 무엇인가요?
 - Average Pooling과 Max Pooling의 차이점은?
+  - Average Pooling: pool size 내의 값의 평균  
+  - Max Pooling: pool size 내의 값의 최댓값  
 - Deep한 네트워크가 좋은 것일까요? 언제까지 좋을까요?
+  - 보다 많은 특성을 탐지 및 학습할 수 있다  
+  - 단 네트워크가 깊어지면 gradient vanishing이 나타날 수 있으며 이는 모델의 학습을 방해한다  
 - Residual Network는 왜 잘될까요? Ensemble과 관련되어 있을까요?  
   - [reference](https://arxiv.org/abs/1605.06431)  
   - ResNet에서 building blocks를 쌓는다는 것은 입력과 출력을 연결하는 O(2^n)개의 implicit paths를 설정함과 같음  
   - 이러한 paths들은 서로 강하게 의존하지 않고 결국 ensemble과 유사하게 행동함  
 - CAM(Class Activation Map)은 무엇인가요?
+  - 분류 과제를 위해서는 Flatten layer, Fully connection layer가 필요함  
+  - 그러나 이를 거치면서 위치 정보가 소실됨  
+  - CNN layer에 Global average pooling layer를 붙여 objects의 위치 정보를 보존할 수 있음  
+  - 이를 활용하여 class specific activation map 추출. 즉 모델이 입력 이미지를 특정 class로 분류하는 데 영향을 미친 object를 heatmap 형태로 나타냄  
 - Localization은 무엇일까요?
 - 자율주행 자동차의 원리는 무엇일까요?
 - Semantic Segmentation은 무엇인가요?
