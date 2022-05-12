@@ -338,14 +338,20 @@
   - CNN layer에 Global average pooling layer를 붙여 objects의 위치 정보를 보존할 수 있음  
   - 이를 활용하여 class specific activation map 추출. 즉 모델이 입력 이미지를 특정 class로 분류하는 데 영향을 미친 object를 heatmap 형태로 나타냄  
 - Localization은 무엇일까요?
+  - 이미지 속 object의 위치를 설정하는 알고리즘  
 - 자율주행 자동차의 원리는 무엇일까요?
 - Semantic Segmentation은 무엇인가요?
+  - 이미지의 픽셀별로 클래스를 예측하는 알고리즘  
 - Visual Q&A는 무엇인가요?
 - Image Captioning은 무엇인가요?
+  - 이미지를 설명하는 텍스트를 생성하는 알고리즘  
 - Fully Connected Layer의 기능은 무엇인가요?
+  - 합성곱층에서 추출된 특징을 토대로 이미지를 분류함  
 - Neural Style은 어떻게 진행될까요?
 - CNN에 대해서 아는대로 얘기하라  
   - CNN이 MLP보다 좋은 이유는?  
+    - MLP를 사용하면 (1) 2차원 이미지가 1차원 벡터로 바뀌며 소실되는 feature(공간적 특징)가 많다 (2) 이미지의 크기가 커질수록, 깊이 쌓을수록 파라미터의 수가 급격히 증가한다  
+    - CNN: 2차원 구조의 정보를 잃지 않으면서도 MLP(FCL)에 비해 파라미터의 수가 적다  
   - 어떤 CNN의 파라미터 개수를 계산해 본다면?  
   - 주어진 CNN과 똑같은 MLP를 만들 수 있나?  
   - 풀링시에 만약 Max를 사용한다면 그 이유는?  
