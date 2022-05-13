@@ -23,6 +23,8 @@
   - sampling: 단순 무작위, 계통, 층화, 군집 추출 등
   - resampling: bootstrap, cross-validation 등. 샘플의 통계량의 정밀도를 측정하거나 샘플의 임의의 부분 집합을 이용하여 모델을 검증함
 - 확률 모형과 확률 변수는 무엇일까요?
+  - 확률 변수: 정의역이 표본 공간인 함수 [ref](https://freshrimpsushi.github.io/posts/random-variable-and-probability-distribution/)  
+  - 확률 모형: 데이터의 분포를 근사하는 모형  
 - 누적 분포 함수와 확률 밀도 함수는 무엇일까요? 수식과 함께 표현해주세요
   - 확률 밀도 함수: 연속확률분포에서 확률변수가 특정값일 때의 우도(likelihood)
     - <img src="https://latex.codecogs.com/svg.latex?\small\displaystyle&space;\mathrm{Pr}(a\leq&space;X\leq&space;b)=\int_{a}^{b}f_{X}(x)dx"/>  
@@ -44,7 +46,12 @@
   - 통계적 검정으로 통계량과 유의확률을 얻음
   - 유의확률이 유의수준보다 작으면 귀무가설을 기각하고 대립가설을 채택함
 - p-value는 요즘 시대에도 여전히 유효할까요? 언제 p-value가 실제를 호도하는 경향이 있을까요?  
-  - [레퍼런스](https://blog.minitab.com/en/understanding-statistics/what-can-you-say-when-your-p-value-is-greater-than-005)  
+  - [ref](https://blog.minitab.com/en/understanding-statistics/what-can-you-say-when-your-p-value-is-greater-than-005)  
+  - [ref](https://freshrimpsushi.github.io/posts/significance-probability-p-value/)  
+  - p-value가 유의수준보다 작으면 귀무가설을 기각한다. 유의수준은 일종의 threshold로만 기능하며 p-value의 대소에 대해 해석의 여지는 없다  
+  - 예를 들어 유의수준 0.05에서 p-value가 0.01이든 0.001이든 귀무가설을 기각할 뿐, 양자 중 어느 것이 더 확실하게 혹은 강하게 기각한다고 말할 순 없다  
+  - 반대로 유의수준 0.05에서 p-value가 0.7이든 0.051이든 똑같이 귀무가설을 기각할 수 없다. 아무리 유의수준에 가깝더라도 유의수준을 초과하는 순간 협상의 여지는 없다  
+  - 그러나 심지어 학술적인 글에서조차 이를 교묘히 호도하는 표현을 사용한다  
 - A/B Test 등 현상 분석 및 실험 설계 상 통계적으로 유의미함의 여부를 결정하기 위한 방법에는 어떤 것이 있을까요?
 - R square의 의미는 무엇인가요? 
   - 데이터셋 종속변수(label)의 분산 가운데 모델 연산에 따라 독립변수(features)로 설명되는 분산의 비율
