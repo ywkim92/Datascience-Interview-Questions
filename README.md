@@ -96,6 +96,7 @@
   - ESD(3-sigma), 기하평균 ± (2.5-sigma), Z-score
 - 콜센터 통화 지속 시간에 대한 데이터가 존재합니다. 이 데이터를 코드화하고 분석하는 방법에 대한 계획을 세워주세요. 이 기간의 분포가 어떻게 보일지에 대한 시나리오를 설명해주세요
 - 출장을 위해 비행기를 타려고 합니다. 당신은 우산을 가져가야 하는지 알고 싶어 출장지에 사는 친구 3명에게 무작위로 전화를 하고 비가 오는 경우를 독립적으로 질문해주세요. 각 친구는 2/3로 진실을 말하고 1/3으로 거짓을 말합니다. 3명의 친구가 모두 "그렇습니다. 비가 내리고 있습니다"라고 말했습니다. 실제로 비가 내릴 확률은 얼마입니까?
+  - <img src="https://latex.codecogs.com/svg.latex?\normalsize\textstyle&space;1-\left(\frac{1}{3}\right)^3=\frac{26}{27}"/>
 - 필요한 표본의 크기를 어떻게 계산합니까?
   - [reference](https://en.wikipedia.org/wiki/Sample_size_determination#Estimation_of_a_proportion)
   - Z: z-score, p: population proportion, epsilone: margin of error
@@ -137,12 +138,16 @@
   - K-1개 folds를 학습하고 남은 1개 fold에 대해 모델 검증
   - 보다 엄밀한 검증 가능. 하이퍼 파라미터 튜닝 등에 사용
 - 회귀 / 분류시 알맞은 metric은 무엇일까요?
+  - 회귀: MAE, MSE, RMSE, MAPE, R2  
+  - 분류: Accuracy, recall, precision, F1 score, AUC  
 - 알고 있는 metric에 대해 설명해주세요(ex. RMSE, MAE, recall, precision ...)
 - 정규화(regularization)를 왜 해야할까요? 정규화의 방법은 무엇이 있나요?
   - 오버피팅 방지
   - 데이터셋 증가, 모델 복잡도 감소, 가중치 규제, 드롭아웃 
 - Local Minima와 Global Minima에 대해 설명해주세요.
 - 차원의 저주에 대해 설명해주세요
+  - 변수(feature)의 개수 즉 데이터의 차원이 증가할수록 변수공간 내 임의의 두 점 사이의 평균거리는 빠르게 증가하며 전체 공간에서 데이터가 차지하는 공간이 매우 적어짐  
+  - 필요한 데이터의 수가 기하급수적으로 증가, 훈련이 느려짐  
 - dimension reduction기법으로 보통 어떤 것들이 있나요?
 - PCA는 차원 축소 기법이면서, 데이터 압축 기법이기도 하고, 노이즈 제거기법이기도 합니다. 왜 그런지 설명해주실 수 있나요?
   - 분산설명량 즉 공분산행렬의 고윳값이 큰 순서대로 상위 N개의 고유벡터만을 components로 채택하므로 설명력이 낮은 변수 즉 노이즈가 제거될 수 있음
@@ -166,7 +171,9 @@
   - Gradient decent: <img src="https://latex.codecogs.com/svg.latex?\normalsize&space;\theta_{n+1}=\theta_{n}-\eta\nabla_{\theta}&space;J(\theta_{n})"/>  
     - 손실함수 <img src="https://latex.codecogs.com/svg.latex?\small&space;J(\theta)"/> 를 최소화하는 파라미터를 찾는 과정  
     - 그래디언트 <img src="https://latex.codecogs.com/svg.latex?\small&space;\nabla&space;J(\theta)=\frac{\partial&space;J}{\partial\theta}"/> 를 이용함
-- 머신러닝(machine)적 접근방법과 통계(statistics)적 접근방법의 둘간에 차이에 대한 견해가 있나요?
+- 머신러닝(machine learning)적 접근방법과 통계(statistics)적 접근방법의 둘간에 차이에 대한 견해가 있나요?
+  - 통계적 접근: 특정 현상이나 상관관계를 잘 설명하는 분포나 모형이 있다고 가정하고 이를 표현하는 모수(parameters)를 찾고자 함  
+  - 머신러닝: 손실함수 혹은 성능지표(metric)을 상정하고 이를 최적화하는 방향으로 모델을 데이터에 적합(fit, train)시킴  
 - 인공신경망(deep learning이전의 전통적인)이 가지는 일반적인 문제점은 무엇일까요?
   - XOR problem: 하나의 perceptron만으로는 해결할 수 없음
 - 지금 나오고 있는 deep learning 계열의 혁신의 근간은 무엇이라고 생각하시나요?
@@ -316,6 +323,8 @@
 
 ## 컴퓨터 비전
 - OpenCV 라이브러리만을 사용해서 이미지 뷰어(Crop, 흑백화, Zoom 등의 기능 포함)를 만들어주세요
+  - gray scale: `cv2.cvtColor(src, cv2.COLOR_BGR2GRAY)`  
+  - zoom: `cv2.resize(img, None, n, n)`  
 - 딥러닝 발달 이전에 사물을 Detect할 때 자주 사용하던 방법은 무엇인가요?
 - Fatser R-CNN의 장점과 단점은 무엇인가요?
 - dlib은 무엇인가요?
