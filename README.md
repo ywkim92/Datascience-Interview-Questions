@@ -23,7 +23,7 @@
   - sampling: 단순 무작위, 계통, 층화, 군집 추출 등
   - resampling: bootstrap, cross-validation 등. 샘플의 통계량의 정밀도를 측정하거나 샘플의 임의의 부분 집합을 이용하여 모델을 검증함
 - 확률 모형과 확률 변수는 무엇일까요?
-  - 확률 변수: 정의역이 표본 공간인 함수 [ref](https://freshrimpsushi.github.io/posts/random-variable-and-probability-distribution/)  
+  - 확률 변수: 정의역이 표본 공간인 함수. [**[ref]**](https://freshrimpsushi.github.io/posts/random-variable-and-probability-distribution/)  
   - 확률 모형: 데이터의 분포를 근사하는 모형  
 - 누적 분포 함수와 확률 밀도 함수는 무엇일까요? 수식과 함께 표현해주세요
   - 확률 밀도 함수: 연속확률분포에서 확률변수가 특정값일 때의 우도(likelihood)
