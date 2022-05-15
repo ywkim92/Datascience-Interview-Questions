@@ -287,7 +287,10 @@
     - 학습 데이터에서 global minimum일지라도 평가 데이터에서는 아닐 수 있음
 - Training 세트와 Test 세트를 분리하는 이유는?
 	- Validation 세트가 따로 있는 이유는?
+	  - 가중치를 업데이트하는 과정에서 validation loss를 따로 파악하여 오버피팅을 방지하기 위함  
 	- Test 세트가 오염되었다는 말의 뜻은?
+	  - Test 세트를 두는 이유는 모델이 한번도 학습하지 못한 데이터로 보다 엄밀하게 모델의 성능을 파악하기 위함  
+	  - 이러한 목적으로 분리된 Test 세트가 모델 학습에 어떠한 방식으로든 개입되었다면 이를 오염되었다고 함  
 	- Regularization이란 무엇인가?
 - Batch Normalization의 효과는?
 	- Dropout의 효과는?
