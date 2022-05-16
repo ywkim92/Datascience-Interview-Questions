@@ -374,6 +374,7 @@
     - MLP를 사용하면 (1) 2차원 이미지가 1차원 벡터로 바뀌며 소실되는 feature(공간적 특징)가 많다 (2) 이미지의 크기가 커질수록, 깊이 쌓을수록 파라미터의 수가 급격히 증가한다  
     - CNN: 2차원 구조의 정보를 잃지 않으면서도 MLP(FCL)에 비해 파라미터의 수가 적다  
   - 어떤 CNN의 파라미터 개수를 계산해 본다면?  
+    - kernel params + bias params: `(kernel_h * kernel_w) * num_input_channels * num_filters + num_filters`  
   - 주어진 CNN과 똑같은 MLP를 만들 수 있나?  
   - 풀링시에 만약 Max를 사용한다면 그 이유는?  
   - 시퀀스 데이터에 CNN을 적용하는 것이 가능할까?
