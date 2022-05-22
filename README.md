@@ -382,6 +382,7 @@
     - kernel params + bias params: `(kernel_h * kernel_w) * num_input_channels * num_filters + num_filters`  
   - 주어진 CNN과 똑같은 MLP를 만들 수 있나?  
   - 풀링시에 만약 Max를 사용한다면 그 이유는?  
+    - pooling window 내에서 가장 특징적인 값을 통해 입력 이미지의 특성을 추출함  
   - 시퀀스 데이터에 CNN을 적용하는 것이 가능할까?
 
 ##### [목차로 이동](#contents)
