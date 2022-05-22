@@ -316,7 +316,9 @@
 	- CNN으로 바꾼다면 얼마나 추가될까?
 - 간단한 MNIST 분류기를 TF, Keras, PyTorch 등으로 작성하는데 몇시간이 필요한가?
 	- CNN이 아닌 MLP로 해도 잘 될까?
-	- 마지막 레이어 부분에 대해서 설명 한다면?
+	- 마지막 레이어 부분에 대해서 설명 한다면?  
+	  - 분류기: Fully connected layer = dense layer = linear layer  
+	  - activation function: sigmoid or softmax  
 	- 학습은 BCE loss로 하되 상황을 MSE loss로 보고 싶다면?
 	- 만약 한글 (인쇄물) OCR을 만든다면 데이터 수집은 어떻게 할 수 있을까?
 - 딥러닝할 때 GPU를 쓰면 좋은 이유는?
