@@ -371,6 +371,8 @@
 - Semantic Segmentation은 무엇인가요?
   - 이미지의 픽셀별로 클래스를 예측하는 알고리즘  
 - Visual Q&A는 무엇인가요?
+  - 이미지와 질문(자연어)이 주어지면 이미지의 내용을 바탕으로 질문에 대한 답(자연어)을 제시하는 모델  
+  - [**[paper]**](https://arxiv.org/abs/1505.00468)
 - Image Captioning은 무엇인가요?
   - 이미지를 설명하는 텍스트를 생성하는 알고리즘  
 - Fully Connected Layer의 기능은 무엇인가요?
