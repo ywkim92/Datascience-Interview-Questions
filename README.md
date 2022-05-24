@@ -333,8 +333,10 @@
 
 ## 컴퓨터 비전
 - OpenCV 라이브러리만을 사용해서 이미지 뷰어(Crop, 흑백화, Zoom 등의 기능 포함)를 만들어주세요
-  - gray scale: `cv2.cvtColor(src, cv2.COLOR_BGR2GRAY)`  
-  - zoom: `cv2.resize(img, None, n, n)`  
+  - open image: `img = cv2.imread(fileName, cv2.imread_COLOR)`
+  - crop: `img_crop = img[h1:h2, w1:w2, :]`
+  - gray scale: `cv2.cvtColor(img, cv2.COLOR_BGR2GRAY)`  
+  - zoom: `cv2.resize(img, dsize, None, fx, fy, interpolation)`  
 - 딥러닝 발달 이전에 사물을 Detect할 때 자주 사용하던 방법은 무엇인가요?
 - Fatser R-CNN의 장점과 단점은 무엇인가요?
 - dlib은 무엇인가요?
