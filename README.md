@@ -357,9 +357,9 @@
   - 보다 많은 특성을 탐지 및 학습할 수 있다  
   - 단 네트워크가 깊어지면 gradient vanishing이 나타날 수 있으며 이는 모델의 학습을 방해한다  
 - Residual Network는 왜 잘될까요? Ensemble과 관련되어 있을까요?  
-  - [reference](https://arxiv.org/abs/1605.06431)  
   - ResNet에서 building blocks를 쌓는다는 것은 입력과 출력을 연결하는 O(2^n)개의 implicit paths를 설정함과 같음  
   - 이러한 paths들은 서로 강하게 의존하지 않고 결국 ensemble과 유사하게 행동함  
+  - [**[paper]**](https://arxiv.org/abs/1605.06431)  
 - CAM(Class Activation Map)은 무엇인가요?
   - 분류 과제를 위해서는 Flatten layer, Fully connection layer가 필요함  
   - 그러나 이를 거치면서 위치 정보가 소실됨  
