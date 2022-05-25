@@ -177,6 +177,9 @@
   - <img src="https://latex.codecogs.com/svg.latex?\normalsize&space;\hat{y}=\displaystyle\arg\max_y&space;P(y)\prod_{i=1}^{n}P(x_i|y)"/>  
   - 구현이 간단하며 샘플과 변수의 수가 많더라도 빠른 학습 및 예측이 가능하다. 전제(각 변수의 독립, 특정 분포를 따름)가 타당하다면 양호한 정확도를 기대할 수 있다.  
 - Association Rule의 Support, Confidence, Lift에 대해 설명해주세요.
+  - support: <img src="https://latex.codecogs.com/svg.latex?P(A\cap&space;B)"/>  
+  - confidence(A to B): <img src="https://latex.codecogs.com/svg.latex?P(B|A)"/>  
+  - lift: <img src="https://latex.codecogs.com/svg.latex?\textstyle\frac{P(B|A)}{P(B)}"/>  
 - 최적화 기법중 Newton’s Method와 Gradient Descent 방법에 대해 알고 있나요?
   - Newton's method: <img src="https://latex.codecogs.com/svg.latex?\normalsize&space;x_{n+1}=x_{n}-\frac{f(x_{n})}{f'(x_{n})}"/>
     - <img src="https://latex.codecogs.com/svg.latex?\small&space;f(x)=0"/> 의 해를 찾는 수치해석적 방법  
