@@ -148,9 +148,9 @@
 - 알고 있는 metric에 대해 설명해주세요(ex. RMSE, MAE, recall, precision ...)
 - 정규화(regularization)를 왜 해야할까요? 정규화의 방법은 무엇이 있나요?
   - 목적: 오버피팅 방지
-  - L1(LASSO): <img src="https://latex.codecogs.com/svg.latex?\sum_{i}L(y_i,x_i\cdot&space;w)+\lambda&space;||w||_{1}"/>   
-  - L2(Rigde): <img src="https://latex.codecogs.com/svg.latex?\sum_{i}L(y_i,x_i\cdot&space;w)+\lambda&space;||w||_{2}^{2}"/>   
-  - Elastic Net: <img src="https://latex.codecogs.com/svg.latex?\sum_{i}L(y_i,x_i\cdot&space;w)+\lambda(\alpha||w||_{1}+(1-\alpha)||w||_{2}^2)"/>   
+  - L1(LASSO): <img src="https://latex.codecogs.com/svg.latex?\textstyle\min_{w}\sum_{i}L(y_i,x_i\cdot&space;w)+\lambda&space;||w||_{1}"/>   
+  - L2(Rigde): <img src="https://latex.codecogs.com/svg.latex?\textstyle\min_{w}\sum_{i}L(y_i,x_i\cdot&space;w)+\lambda&space;||w||_{2}^{2}"/>   
+  - Elastic Net: <img src="https://latex.codecogs.com/svg.latex?\textstyle\min_{w}\sum_{i}L(y_i,x_i\cdot&space;w)+\lambda(\alpha||w||_{1}+(1-\alpha)||w||_{2}^2)"/>   
 - Local Minima와 Global Minima에 대해 설명해주세요.
 - 차원의 저주에 대해 설명해주세요
   - 변수(feature)의 개수 즉 데이터의 차원이 증가할수록 변수공간 내 임의의 두 점 사이의 평균거리는 빠르게 증가하며 전체 공간에서 데이터가 차지하는 공간이 매우 적어짐  
