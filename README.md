@@ -47,7 +47,7 @@
   - 유의확률이 유의수준보다 작으면 귀무가설을 기각하고 대립가설을 채택함
 - p-value는 요즘 시대에도 여전히 유효할까요? 언제 p-value가 실제를 호도하는 경향이 있을까요?  
   - [ref](https://blog.minitab.com/en/understanding-statistics/what-can-you-say-when-your-p-value-is-greater-than-005)  
-  - [ref](https://freshrimpsushi.github.io/posts/significance-probability-p-value/)  
+  - [ref1](https://freshrimpsushi.github.io/posts/significance-probability-p-value/)  
   - p-value가 유의수준보다 작으면 귀무가설을 기각한다. 유의수준은 일종의 threshold로만 기능하며 p-value의 대소에 대해 해석의 여지는 없다  
   - 예를 들어 유의수준 0.05에서 p-value가 0.01이든 0.001이든 귀무가설을 기각할 뿐, 양자 중 어느 것이 더 확실하게 혹은 강하게 기각한다고 말할 순 없다  
   - 반대로 유의수준 0.05에서 p-value가 0.7이든 0.051이든 똑같이 귀무가설을 기각할 수 없다. 아무리 유의수준에 가깝더라도 유의수준을 초과하는 순간 협상의 여지는 없다  
@@ -349,8 +349,10 @@
   - crop: `img_crop = img[h1:h2, w1:w2, :]`
   - gray scale: `cv2.cvtColor(img, cv2.COLOR_BGR2GRAY)`  
   - zoom: `cv2.resize(img, dsize, None, fx, fy, interpolation)`  
-- 딥러닝 발달 이전에 사물을 Detect할 때 자주 사용하던 방법은 무엇인가요?
-- Fatser R-CNN의 장점과 단점은 무엇인가요?
+- 딥러닝 발달 이전에 사물을 Detect할 때 자주 사용하던 방법은 무엇인가요?  
+  - 이미지에서 hand-crafted feature를 추출하여 객체를 검출. 수동으로 사전에 정의된 알고리즘, 전문가적 지식에 의존  
+  - SIFT(Scale-Invariant Feature Transform), HOG(Histogram of Oriented Gradients) 등  
+- Fatser R-CNN의 장점과 단점은 무엇인가요?  
 - dlib은 무엇인가요?
 - YOLO의 장점과 단점은 무엇인가요?
   - one stage detector의 일종  
