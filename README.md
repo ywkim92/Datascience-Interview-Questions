@@ -155,10 +155,17 @@
   - 필요한 데이터의 수가 기하급수적으로 증가, 훈련이 느려짐  
 - dimension reduction기법으로 보통 어떤 것들이 있나요?
 - PCA는 차원 축소 기법이면서, 데이터 압축 기법이기도 하고, 노이즈 제거기법이기도 합니다. 왜 그런지 설명해주실 수 있나요?
-  - 분산설명량 즉 공분산행렬의 고윳값이 큰 순서대로 상위 N개의 고유벡터만을 components로 채택하므로 설명력이 낮은 변수 즉 노이즈가 제거될 수 있음
+  - [implementation](https://github.com/ywkim92/Paper-implementation/blob/main/machine_learning/Paper%20implementation_PCA.ipynb)  
+  - 분산설명량 즉 공분산행렬의 고윳값이 큰 순서대로 상위 N개의 고유 벡터만을 components로 채택하므로 설명력이 낮은 변수 즉 노이즈가 제거될 수 있음  
+  - 데이터 행렬을 특정 벡터에 투영(projection)했을 때 값들의 분산이 최대화하는 벡터를 찾는 알고리즘. 즉 데이터 행렬의 공분산 행렬의 고윳값 분해를 통해 얻음  
 - LSA, LDA, SVD 등의 약자들이 어떤 뜻이고 서로 어떤 관계를 가지는지 설명할 수 있나요?
-  - LSA: truncated SVD를 활용하여 데이터의 차원을 축소시킴. 텍스트 데이터의 경우, 축소된 각각의 components를 하나의 topic으로 간주할 수 있음
-  - LDA: 각 문서(=문장)의 단어를 분석하여 토픽별 단어의 분포 나아가 문서의 토픽 비율을 산출. [**[ref]**](https://scikit-learn.org/stable/modules/decomposition.html#latent-dirichlet-allocation-lda)
+  - SVD: Singular Value Decomposition / [implementation](https://github.com/ywkim92/Paper-implementation/blob/main/data_preprocessing/SVD_implementation.ipynb)
+  - LSA
+    - Latent Semantic Analysis  
+    - truncated SVD를 활용하여 데이터의 차원을 축소시킴. 텍스트 데이터의 경우, 축소된 각각의 components를 하나의 topic으로 간주할 수 있음  
+  - LDA
+    - Latent Dirichlet Allocation  
+    - 각 문서(=문장)의 단어를 분석하여 토픽별 단어의 분포 나아가 문서의 토픽 비율을 산출. [**[ref]**](https://scikit-learn.org/stable/modules/decomposition.html#latent-dirichlet-allocation-lda)
     - <img src="https://latex.codecogs.com/svg.latex?\normalsize&space;p(z,\theta,\beta|w,\alpha,\eta)=\frac{p(z,\theta,\beta|\alpha,\eta)}{p(w|\alpha,\eta)}"/>
 - Markov Chain을 고등학생에게 설명하려면 어떤 방식이 제일 좋을까요?
 - 텍스트 더미에서 주제를 추출해야 합니다. 어떤 방식으로 접근해 나가시겠나요?
