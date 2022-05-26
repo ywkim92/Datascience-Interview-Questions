@@ -129,6 +129,7 @@
 - 고객이 원하는 예측모형을 두가지 종류로 만들었다. 하나는 예측력이 뛰어나지만 왜 그렇게 예측했는지를 설명하기 어려운 random forest 모형이고, 또다른 하나는 예측력은 다소 떨어지나 명확하게 왜 그런지를 설명할 수 있는 sequential bayesian 모형입니다.고객에게 어떤 모형을 추천하겠습니까?
 - 고객이 내일 어떤 상품을 구매할지 예측하는 모형을 만들어야 한다면 어떤 기법(예: SVM, Random Forest, logistic regression 등)을 사용할 것인지 정하고 이를 통계와 기계학습 지식이 전무한 실무자에게 설명해봅시다.
 - 나만의 feature selection 방식을 설명해봅시다.
+  - [implementation](https://github.com/ywkim92/Paper-implementation/blob/main/machine_learning/Feature_selection.ipynb)
   - recursive feature elimination
   - sequential feature selection
   - t-test, chi2 contingency
