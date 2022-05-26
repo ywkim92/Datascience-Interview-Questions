@@ -85,7 +85,7 @@
   - oversampling
   - voting: 여러 단일 모델의 결과를 voting
 - 베이지안과 프리퀀티스트간의 입장차이를 설명해주실 수 있나요?
-  - [레퍼런스](https://freshrimpsushi.github.io/posts/bayesian-paradigm/)
+  - [**[ref]**](https://freshrimpsushi.github.io/posts/bayesian-paradigm/)
   - frequentist: 표본이 모집단과 동질할 것이라는 가정. 따라서 (확률화를 통해 추출된) 표본의 크기가 클수록 모집단을 잘 표현함. 새로운 관측값이 표본을 통해 추정한 분포에 얼마나 잘 부합하는지 확인
   - bayesian: 사전분포를 가정하고 새로운 관측값을 반영해 베이즈 정리로 사후분포를 구하며 모수를 추정
 - 검정력(statistical power)은 무엇일까요?
@@ -359,7 +359,10 @@
   - 이미지에서 hand-crafted feature를 추출하여 객체를 검출. 수동으로 사전에 정의된 알고리즘, 전문가적 지식에 의존  
   - SIFT(Scale-Invariant Feature Transform), HOG(Histogram of Oriented Gradients) 등  
 - Fatser R-CNN의 장점과 단점은 무엇인가요?  
-- dlib은 무엇인가요?
+  - 장점: region proposal 단계(물체의 대략적인 위치 식별)를 RPN으로 수행(R-CNN은 selective search 사용). 속도 개선, 객체 검출 전 단계를 신경망으로만 구성  
+  - 단점: 여러 단계를 거쳐 학습이 수행되므로 시간이 오래 걸린다  
+- dlib은 무엇인가요?  
+  - 머신러닝 알고리즘 등이 포함된, C++ 툴킷. 여러 기능 가운데 HOG feature를 활용한 face detection 등이 유명함  
 - YOLO의 장점과 단점은 무엇인가요?
   - one stage detector의 일종  
   - region proposal 단계를 건너뛰고 CNN 층에서 위치와 클래스를 모두 예측함  
