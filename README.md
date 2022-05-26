@@ -46,8 +46,8 @@
   - 통계적 검정으로 통계량과 유의확률을 얻음
   - 유의확률이 유의수준보다 작으면 귀무가설을 기각하고 대립가설을 채택함
 - p-value는 요즘 시대에도 여전히 유효할까요? 언제 p-value가 실제를 호도하는 경향이 있을까요?  
-  - [ref](https://blog.minitab.com/en/understanding-statistics/what-can-you-say-when-your-p-value-is-greater-than-005)  
-  - [ref1](https://freshrimpsushi.github.io/posts/significance-probability-p-value/)  
+  - [**[ref]**](https://blog.minitab.com/en/understanding-statistics/what-can-you-say-when-your-p-value-is-greater-than-005)  
+  - [**[ref1]**](https://freshrimpsushi.github.io/posts/significance-probability-p-value/)  
   - p-value가 유의수준보다 작으면 귀무가설을 기각한다. 유의수준은 일종의 threshold로만 기능하며 p-value의 대소에 대해 해석의 여지는 없다  
   - 예를 들어 유의수준 0.05에서 p-value가 0.01이든 0.001이든 귀무가설을 기각할 뿐, 양자 중 어느 것이 더 확실하게 혹은 강하게 기각한다고 말할 순 없다  
   - 반대로 유의수준 0.05에서 p-value가 0.7이든 0.051이든 똑같이 귀무가설을 기각할 수 없다. 아무리 유의수준에 가깝더라도 유의수준을 초과하는 순간 협상의 여지는 없다  
@@ -100,7 +100,7 @@
 - 출장을 위해 비행기를 타려고 합니다. 당신은 우산을 가져가야 하는지 알고 싶어 출장지에 사는 친구 3명에게 무작위로 전화를 하고 비가 오는 경우를 독립적으로 질문해주세요. 각 친구는 2/3로 진실을 말하고 1/3으로 거짓을 말합니다. 3명의 친구가 모두 "그렇습니다. 비가 내리고 있습니다"라고 말했습니다. 실제로 비가 내릴 확률은 얼마입니까?
   - <img src="https://latex.codecogs.com/svg.latex?\normalsize\textstyle&space;1-\left(\frac{1}{3}\right)^3=\frac{26}{27}"/>
 - 필요한 표본의 크기를 어떻게 계산합니까?
-  - [reference](https://en.wikipedia.org/wiki/Sample_size_determination#Estimation_of_a_proportion)
+  - [**[ref]**](https://en.wikipedia.org/wiki/Sample_size_determination#Estimation_of_a_proportion)
   - Z: z-score, p: population proportion, epsilone: margin of error
   - <img src="https://latex.codecogs.com/svg.latex?\normalsize&space;n=\frac{Z^{2}&space;p(1-p)}{\epsilon^2}&space;"/>
 - Bias를 통제하는 방법은 무엇입니까?
