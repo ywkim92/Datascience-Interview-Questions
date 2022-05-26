@@ -129,6 +129,7 @@
 - 고객이 원하는 예측모형을 두가지 종류로 만들었다. 하나는 예측력이 뛰어나지만 왜 그렇게 예측했는지를 설명하기 어려운 random forest 모형이고, 또다른 하나는 예측력은 다소 떨어지나 명확하게 왜 그런지를 설명할 수 있는 sequential bayesian 모형입니다.고객에게 어떤 모형을 추천하겠습니까?
 - 고객이 내일 어떤 상품을 구매할지 예측하는 모형을 만들어야 한다면 어떤 기법(예: SVM, Random Forest, logistic regression 등)을 사용할 것인지 정하고 이를 통계와 기계학습 지식이 전무한 실무자에게 설명해봅시다.
 - 나만의 feature selection 방식을 설명해봅시다.
+  - [Blog post](https://ywkim92.github.io/machine_learning/feature_selection/)
   - [implementation](https://github.com/ywkim92/Paper-implementation/blob/main/machine_learning/Feature_selection.ipynb)
   - recursive feature elimination
   - sequential feature selection
@@ -158,11 +159,15 @@
   - 필요한 데이터의 수가 기하급수적으로 증가, 훈련이 느려짐  
 - dimension reduction기법으로 보통 어떤 것들이 있나요?
 - PCA는 차원 축소 기법이면서, 데이터 압축 기법이기도 하고, 노이즈 제거기법이기도 합니다. 왜 그런지 설명해주실 수 있나요?
+  - [Blog post](https://ywkim92.github.io/machine_learning/PCA/)
   - [implementation](https://github.com/ywkim92/Paper-implementation/blob/main/machine_learning/Paper%20implementation_PCA.ipynb)  
   - 분산설명량 즉 공분산행렬의 고윳값이 큰 순서대로 상위 N개의 고유 벡터만을 components로 채택하므로 설명력이 낮은 변수 즉 노이즈가 제거될 수 있음  
   - 데이터 행렬을 특정 벡터에 투영(projection)했을 때 값들의 분산이 최대화하는 벡터를 찾는 알고리즘. 즉 데이터 행렬의 공분산 행렬의 고윳값 분해를 통해 얻음  
 - LSA, LDA, SVD 등의 약자들이 어떤 뜻이고 서로 어떤 관계를 가지는지 설명할 수 있나요?
-  - SVD: Singular Value Decomposition / [implementation](https://github.com/ywkim92/Paper-implementation/blob/main/data_preprocessing/SVD_implementation.ipynb)
+  - SVD
+    - [Blog post](https://ywkim92.github.io/machine_learning/SVD/)  
+    - [implementation](https://github.com/ywkim92/Paper-implementation/blob/main/data_preprocessing/SVD_implementation.ipynb)  
+    - Singular Value Decomposition  
   - LSA
     - Latent Semantic Analysis  
     - truncated SVD를 활용하여 데이터의 차원을 축소시킴. 텍스트 데이터의 경우, 축소된 각각의 components를 하나의 topic으로 간주할 수 있음  
