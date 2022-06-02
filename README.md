@@ -390,7 +390,8 @@
   - 이를 활용하여 class specific activation map 추출. 즉 모델이 입력 이미지를 특정 class로 분류하는 데 영향을 미친 object를 heatmap 형태로 나타냄  
 - Localization은 무엇일까요?
   - 이미지 속 object의 위치를 설정하는 알고리즘  
-- 자율주행 자동차의 원리는 무엇일까요?
+- 자율주행 자동차의 원리는 무엇일까요?  
+  - Object detection: 전방 카메라에 잡힌 물체의 종류와 위치를 판단할 때 사용  
 - Semantic Segmentation은 무엇인가요?
   - 이미지의 픽셀별로 클래스를 예측하는 알고리즘  
 - Visual Q&A는 무엇인가요?
