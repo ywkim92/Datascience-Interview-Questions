@@ -345,7 +345,9 @@
 	- 학습시 필요한 GPU 메모리는 어떻게 계산하는가?
 - TF, Keras, PyTorch 등을 사용할 때 디버깅 노하우는?
   - input과 output array의 dimensionality를 살핀다
-- 뉴럴넷(neural network)의 가장 큰 단점은 무엇인가? 이를 위해 나온 One-Shot Learning은 무엇인가? 
+- 뉴럴넷(neural network)의 가장 큰 단점은 무엇인가? 이를 위해 나온 One-Shot Learning은 무엇인가?  
+  - 신경망을 깊이 쌓을수록 파라미터의 수가 급격히 증가하고 이를 학습시키기 위해서는 상응하는 양의 데이터가 필요함  
+  - 그에 더해 데이터 불균형이 없어야 함  
 
 ##### [목차로 이동](#contents)
 
