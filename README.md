@@ -231,7 +231,9 @@
   - 어떠한 데이터셋에 대해서도 유사한 성능을 보이는 모델
 - 50개의 작은 의사결정 나무는 큰 의사결정 나무보다 괜찮을까요? 왜 그렇게 생각하나요?
   - 나무의 개수가 많을수록 임의성이 확보되어 모델이 보다 robust하다
-- 스팸 필터에 로지스틱 리그레션을 많이 사용하는 이유는 무엇일까요?
+- 스팸 필터에 로지스틱 리그레션을 많이 사용하는 이유는 무엇일까요?  
+  - coefficients 기반, 직관적 모델, 결과 해석에 유리  
+  - Binary classification 문제에 적합, 스팸 확률 산출 가능  
 - OLS(ordinary least squre) regression의 공식은 무엇인가요?
   - <img src="https://latex.codecogs.com/svg.latex?\large&space;\mathbf{y}=X\beta+\epsilon"/>  
   - <img src="https://latex.codecogs.com/svg.latex?\large&space;\hat{\beta}=(X^{T}&space;X)^{-1}X^{T}\mathbf{y}"/>  
