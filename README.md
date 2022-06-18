@@ -85,7 +85,7 @@
 - 모수(population)가 매우 적은 (수십개 이하) 케이스의 경우 어떤 방식으로 예측 모델을 수립할 수 있을까요?
   - overfitting 방지: 단순한 모델 채택 및 보수적인 적용, regularization 사용
   - outliers 관리
-  - oversampling
+  - over-sampling
   - voting: 여러 단일 모델의 결과를 voting
 - 베이지안과 프리퀀티스트간의 입장차이를 설명해주실 수 있나요?
   - [**[ref]**](https://freshrimpsushi.github.io/posts/bayesian-paradigm/)
