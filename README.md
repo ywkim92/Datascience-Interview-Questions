@@ -179,7 +179,9 @@
     - 각 문서(=문장)의 단어를 분석하여 토픽별 단어의 분포 나아가 문서의 토픽 비율을 산출. [**[ref]**](https://scikit-learn.org/stable/modules/decomposition.html#latent-dirichlet-allocation-lda)
     - <img src="https://latex.codecogs.com/svg.latex?\normalsize&space;p(z,\theta,\beta|w,\alpha,\eta)=\frac{p(z,\theta,\beta|\alpha,\eta)}{p(w|\alpha,\eta)}"/>
 - Markov Chain을 고등학생에게 설명하려면 어떤 방식이 제일 좋을까요?
-- 텍스트 더미에서 주제를 추출해야 합니다. 어떤 방식으로 접근해 나가시겠나요?
+- 텍스트 더미에서 주제를 추출해야 합니다. 어떤 방식으로 접근해 나가시겠나요?  
+  - 키워드 추출: TF-iDF, Bert
+  - 텍스트 요약: TextRank, Seq2Seq
 - SVM은 왜 반대로 차원을 확장시키는 방식으로 동작할까요? 거기서 어떤 장점이 발생했나요?
   - rbf, linear, sigmoid 등 kernel을 통해 차원을 확장
   - (특히 분류 문제에서) 확장된 공간에 mapping된 data points를 선형으로 구분하는 hyperplane을 찾을 수 있음
@@ -210,6 +212,8 @@
   - false positive rate를 x축으로 true positive rate(recall=sensitivity)를 y축으로 하는 그래프
   - AUC: ROC 커브와 y=0, x=1로 둘러쌓인 면적의 넓이
 - 여러분이 서버를 100대 가지고 있습니다. 이때 인공신경망보다 Random Forest를 써야하는 이유는 뭘까요?
+  - Random Forest는 많은 Decision tree의 결과를 앙상블하는 기법  
+  - 트리를 각 서버에 할당하여 계산 수행할 수 있음  
 - K-means의 대표적 의미론적 단점은 무엇인가요? (계산량 많다는것 말고)
   - 이상치에 민감함
   - 군집의 개수를 미리 설정해야 함
