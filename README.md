@@ -336,7 +336,9 @@
 	- 미니배치를 작게 할때의 장단점은?
 	  - 장점: 가중치를 자주 수정할 수 있으므로 global minimum에 접근하는 데 유리
 	  - 단점: 행렬 연산의 이점을 살리기 어렵다, 가중치 업데이트 시 진동이 심하다
-	- 모멘텀의 수식을 적어 본다면?
+	- 모멘텀의 수식을 적어 본다면?  
+	  - `velocity = momentum * velocity - learning_rate * g` 
+	  - `w = w + velocity`  
 - 간단한 MNIST 분류기를 MLP+CPU 버전으로 numpy로 만든다면 몇줄일까?
 	- 어느 정도 돌아가는 녀석을 작성하기까지 몇시간 정도 걸릴까?
 	- Back Propagation은 몇줄인가?
