@@ -428,6 +428,13 @@
   - 풀링시에 만약 Max를 사용한다면 그 이유는?  
     - pooling window 내에서 가장 특징적인 값을 통해 입력 이미지의 특성을 추출함  
   - 시퀀스 데이터에 CNN을 적용하는 것이 가능할까?
+- CV models
+  - AlexNet: 5 CNN layers & 3 FC layers. Relu, image augmentation, Batch Normalization, dropout, L2 regularization 
+  - VGGNet: same hyper-parameters through the whole convolution and pooling layers
+  - GoogLeNet: 다양한 크기의 커널을 동시에 사용하고 reduce layer가 적용된 inception module 사용  
+  - ResNet: Gradient vanishing 문제 해결을 위해 Residual block(skip connection) 도입  
+  - MobileNet: 모델 경량화를 위해 Depthwise separable convolution 도입  
+  - EfficientNet: 신경망의 층수, 입력 이미지 크기, 합성곱층 필터의 수 등을 최적화  
 
 ##### [목차로 이동](#contents)
 
