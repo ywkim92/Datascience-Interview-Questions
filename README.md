@@ -495,6 +495,9 @@
 	- 원리: 주변(skip-gram) 혹은 중심(CBOW) 단어를 예측하는 인공신경망을 학습, 단어를 특정 차원의 실수 벡터로 표현. 단어의 의미가 수치화되며 단어 간 유사도를 비교할 수 있음  
 	- 남자와 여자가 가까울까? 남자와 자동차가 가까울까? - 학습한 corpus에 따라 다를 것이다  
 	- 번역을 Unsupervised로 할 수 있을까? - A언어의 단어와 B언어의 단어가 동일한 벡터 공간에 임베딩되어 있다면, 단어 간 유사도를 비교하는 방식으로 word-level 번역 가능  
+- NLP models. 
+  - BERT: transformer encoder 사용. base - 12 layers, 768 dims. 사전학습 MLM, NSP
+  - Electra: 사전학습 Replaced token detection. generator & discriminator 네트워크 사용  
 
 ##### [목차로 이동](#contents)
 
