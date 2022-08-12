@@ -366,10 +366,11 @@
 
 ## 컴퓨터 비전
 - OpenCV 라이브러리만을 사용해서 이미지 뷰어(Crop, 흑백화, Zoom 등의 기능 포함)를 만들어주세요
-  - open image: `img = cv2.imread(fileName, cv2.imread_COLOR)`
+  - open image: `img = cv2.imread(fileName, cv2.IMREAD_COLOR)`
   - crop: `img_crop = img[h1:h2, w1:w2, :]`
   - gray scale: `cv2.cvtColor(img, cv2.COLOR_BGR2GRAY)`  
-  - zoom: `cv2.resize(img, dsize, None, fx, fy, interpolation)`  
+  - zoom: `cv2.resize(img, dsize = None, fx, fy, interpolation = cv2.INTER_CUBIC)`  
+  - save: `cv2.imwrite(fileName, img)`  
 - 딥러닝 발달 이전에 사물을 Detect할 때 자주 사용하던 방법은 무엇인가요?  
   - 이미지에서 hand-crafted feature를 추출하여 객체를 검출. 수동으로 사전에 정의된 알고리즘, 전문가적 지식에 의존  
   - SIFT(Scale-Invariant Feature Transform), HOG(Histogram of Oriented Gradients) 등  
