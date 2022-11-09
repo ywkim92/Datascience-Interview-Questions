@@ -36,7 +36,8 @@
 - 조건부 확률은 무엇일까요?
   - <img src="https://latex.codecogs.com/svg.latex?\small&space;P(A|B)=\frac{P(A\cap&space;B)}{P(B)}"/>
 - 공분산과 상관계수는 무엇일까요? 수식과 함께 표현해주세요
-  - 공분산: <img src="https://latex.codecogs.com/svg.latex?\normalsize&space;Cov[x,y]=E[(x-\bar{x})(y-\bar{y})]&space;"/>
+  - 공분산: <img src="https://latex.codecogs.com/svg.latex?\normalsize&space;Cov[x,y]=E[(x-\bar{x})(y-\bar{y})]&space;"/>  
+  - 상관계수: <img src="https://latex.codecogs.com/svg.latex?\small&space;r_{x,y}=\frac{E[(x-\bar{x})(y-\bar{y})]}{\sigma_{x}&space;\sigma_{y}}&space;"/>  
 - 신뢰 구간의 정의는 무엇인가요?
   - L: lower bound, U: upper bound
   - <img src="https://latex.codecogs.com/svg.latex?\normalsize&space;(L,U)\subset\mathbb{R}\text{&space;where&space;}(1-\alpha)=P[\theta\in&space;(L,U)]&space;"/>
