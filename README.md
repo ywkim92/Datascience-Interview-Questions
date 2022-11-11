@@ -195,8 +195,9 @@
   - confidence(A to B): <img src="https://latex.codecogs.com/svg.latex?P(B|A)"/>  
   - lift: <img src="https://latex.codecogs.com/svg.latex?\textstyle\frac{P(B|A)}{P(B)}"/>  
 - 최적화 기법중 Newton’s Method와 Gradient Descent 방법에 대해 알고 있나요?
-  - Newton's method: <img src="https://latex.codecogs.com/svg.latex?\normalsize&space;x_{n+1}=x_{n}-\frac{f(x_{n})}{f'(x_{n})}"/>
+  - Newton's method: <img src="https://latex.codecogs.com/svg.latex?\small&space;x_{n+1}=x_{n}-\frac{f(x_{n})}{f'(x_{n})}"/>
     - <img src="https://latex.codecogs.com/svg.latex?\small&space;f(x)=0"/> 의 해를 찾는 수치해석적 방법  
+  
   - Gradient decent: <img src="https://latex.codecogs.com/svg.latex?\normalsize&space;\theta_{n+1}=\theta_{n}-\eta\nabla_{\theta}&space;J(\theta_{n})"/>  
     - 손실함수 <img src="https://latex.codecogs.com/svg.latex?\small&space;J(\theta)"/> 를 최소화하는 파라미터를 찾는 과정  
     - 그래디언트 <img src="https://latex.codecogs.com/svg.latex?\small&space;\nabla&space;J(\theta)=\frac{\partial&space;J}{\partial\theta}"/> 를 이용함
